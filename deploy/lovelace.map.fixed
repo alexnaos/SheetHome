@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.map",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "type": "panel",
+          "title": "Карта",
+          "icon": "mdi:map",
+          "cards": [
+            {
+              "type": "custom:map-card",
+              "zoom": 12,
+              "card_size": 8,
+              "default_zoom": 22,
+              "x": 55.586359,
+              "y": 39.429339,
+              "entities": [
+                "person.alex_2",
+                "device_tracker.cph2205",
+                "device_tracker.karta_4c_11_ae_10_42_08",
+                "device_tracker.karta_74_2f_68_9d_20_b3",
+                "device_tracker.karta_80_65_99_5b_e5_7c",
+                "device_tracker.karta_a6_e9_89_1f_e9_2b",
+                "device_tracker.karta_alenushka",
+                "device_tracker.karta_antix1",
+                "device_tracker.karta_antix1_home_network_2026_10_09_19_48",
+                "device_tracker.karta_banyamedia_home_network_2026_04_30_18_25",
+                "device_tracker.karta_d4_21_22_40_cd_54",
+                "device_tracker.karta_debian_home_network_2026_05_31_18_04",
+                "device_tracker.karta_domsloboda",
+                "device_tracker.karta_domsloboda_home_network_2026_05_26_21_14",
+                "device_tracker.karta_esp_1a69aa_home_network_2026_05_12_21_43",
+                "device_tracker.karta_esp32_3555b4_home_network_2026_05_25_23_08",
+                "device_tracker.karta_esp32_f4810c_home_network_2026_05_14_14_33",
+                "device_tracker.karta_esp32radio",
+                "device_tracker.karta_esp8266",
+                "device_tracker.karta_espressif_home_network_2026_05_02_21_10",
+                "device_tracker.karta_kamera",
+                "device_tracker.karta_mediapad_10_fhd_d31894566c_home_network_2026_05_17_11_35",
+                "device_tracker.karta_notrbook",
+                "device_tracker.karta_oppo_a91kamera",
+                "device_tracker.karta_oppo_iaia",
+                "device_tracker.karta_oppo_reno12_f_home_network_2025_09_21_20_32",
+                "device_tracker.karta_orangepi3_lts",
+                "device_tracker.karta_orangepi3_wifi",
+                "device_tracker.karta_realme_c25s",
+                "device_tracker.karta_redmi8_redmi8_home_network_2025_09_21_20_48",
+                "device_tracker.karta_routerban",
+                "device_tracker.karta_tcl_tv",
+                "device_tracker.karta_ulitsa",
+                "device_tracker.karta_xtreme_41oesh01_home_network_2026_05_01_19_48",
+                "device_tracker.karta_yandex_station_street_9cnv_home_network_2026_02_12_13_57",
+                "device_tracker.karta_youradioesp32"
+              ],
+              "tile_layers": [
+                {
+                  "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                  "options": {
+                    "attribution": "© <a href=\"https://openstreetmap.org\">OpenStreetMap</a> contributors"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

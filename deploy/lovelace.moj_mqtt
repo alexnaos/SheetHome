@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.moj_mqtt",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "type": "sections",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "custom:mini-media-player",
+                  "entity": "media_player.yandex_music_final_2",
+                  "artwork": "cover",
+                  "info": "scroll",
+                  "source": "full",
+                  "sound_mode": "Default",
+                  "volume_stateless": false,
+                  "group": false,
+                  "toggle_power": true
+                },
+                {
+                  "type": "custom:mini-media-player",
+                  "entity": "media_player.slobodaradio_final",
+                  "artwork": "cover",
+                  "info": "scroll",
+                  "source": "full",
+                  "sound_mode": "Default",
+                  "volume_stateless": false,
+                  "group": false,
+                  "toggle_power": true
+                },
+                {
+                  "type": "custom:webrtc-camera",
+                  "url": "laptop_camera",
+                  "mode": "mse"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.pc_remote_control_pc_power_button_4208",
+                  "name": "КомпВкл"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.relay99"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "DOMSLOBODA"
+                },
+                {
+                  "type": "tile",
+                  "entity": "media_player.domsloboda"
+                },
+                {
+                  "type": "custom:mini-media-player",
+                  "entity": "media_player.sloboda_radio",
+                  "artwork": "cover",
+                  "source": "full",
+                  "info": "scroll"
+                },
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "grid",
+                      "columns": 2,
+                      "square": false,
+                      "cards": [
+                        {
+                          "type": "grid",
+                          "columns": 1,
+                          "square": false,
+                          "cards": [
+                            {
+                              "type": "tile",
+                              "entity": "switch.pc_remote_control_pc_power_button_4208",
+                              "name": "КомпВкл",
+                              "tap_action": {
+                                "action": "toggle"
+                              },
+                              "card_mod": {
+                                "style": "ha-card { background: rgba(255, 255, 255, 0.15) !important; backdrop-filter: blur(5px); }\n"
+                              }
+                            },
+                            {
+                              "type": "tile",
+                              "entity": "switch.sonoff_100284cd66_1",
+                              "name": "Свет терраса",
+                              "tap_action": {
+                                "action": "toggle"
+                              },
+                              "card_mod": {
+                                "style": "ha-card { background: rgba(255, 255, 255, 0.15) !important; backdrop-filter: blur(5px); }\n"
+                              }
+                            },
+                            {
+                              "type": "tile",
+                              "entity": "switch.webbanya3_rele",
+                              "name": "WebBanya3 Реле",
+                              "tap_action": {
+                                "action": "toggle"
+                              },
+                              "card_mod": {
+                                "style": "ha-card { background: rgba(255, 255, 255, 0.15) !important; backdrop-filter: blur(5px); }\n"
+                              }
+                            },
+                            {
+                              "type": "tile",
+                              "entity": "switch.relay99",
+                              "name": "Relay99",
+                              "tap_action": {
+                                "action": "toggle"
+                              },
+                              "card_mod": {
+                                "style": "ha-card { background: rgba(255, 255, 255, 0.15) !important; backdrop-filter: blur(5px); }\n"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "entities",
+                          "show_header_toggle": false,
+                          "card_mod": {
+                            "style": "ha-card { background: rgba(255, 255, 255, 0.15) !important; backdrop-filter: blur(5px); border: none; height: 100%; }\n"
+                          },
+                          "entities": [
+                            {
+                              "entity": "number.kalibrovka_min_mks",
+                              "name": "Калибровка Мин"
+                            },
+                            {
+                              "entity": "number.kalibrovka_maks_mks",
+                              "name": "Калибровка Макс"
+                            },
+                            {
+                              "entity": "number.webbanya3_moshchnost",
+                              "name": "Мощность"
+                            },
+                            {
+                              "entity": "sensor.webbanya3_temperatura_dom",
+                              "name": "Температура дом"
+                            },
+                            {
+                              "entity": "light.dimmer_esp32_dimmer",
+                              "name": "Диммер"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "grid",
+                      "columns": 2,
+                      "square": false,
+                      "cards": [
+                        {
+                          "type": "sensor",
+                          "entity": "sensor.webbanya3_temperatura_ulitsa",
+                          "name": "Улица",
+                          "graph": "line",
+                          "card_mod": {
+                            "style": "ha-card { background: rgba(255, 255, 255, 0.15) !important; backdrop-filter: blur(5px); }\n"
+                          }
+                        },
+                        {
+                          "type": "tile",
+                          "entity": "select.webbanya3_rezhim",
+                          "name": "Режим",
+                          "card_mod": {
+                            "style": "ha-card { background: rgba(255, 255, 255, 0.15) !important; backdrop-filter: blur(5px); }\n"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "picture-entity",
+                      "entity": "camera.kamera_2",
+                      "show_state": true,
+                      "show_name": true,
+                      "camera_view": "live"
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "cards": [
+                        {
+                          "type": "button",
+                          "icon": "mdi:arrow-up",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "shell_command.ptz_cam1",
+                            "data": {
+                              "action": "up"
+                            }
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "icon": "mdi:arrow-left",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "shell_command.ptz_cam1",
+                            "data": {
+                              "action": "left"
+                            }
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "icon": "mdi:stop",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "shell_command.ptz_cam1",
+                            "data": {
+                              "action": "stop"
+                            }
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "icon": "mdi:arrow-right",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "shell_command.ptz_cam1",
+                            "data": {
+                              "action": "right"
+                            }
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "icon": "mdi:arrow-down",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "shell_command.ptz_cam1",
+                            "data": {
+                              "action": "down"
+                            }
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "icon": "mdi:magnify-minus",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "shell_command.ptz_cam1",
+                            "data": {
+                              "action": "zoom_out"
+                            }
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "icon": "mdi:magnify-plus",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "shell_command.ptz_cam1",
+                            "data": {
+                              "action": "zoom_in"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
